@@ -1,6 +1,5 @@
-import express, { Request, Response } from "express";
+import express from "express";
 import { config } from "dotenv";
-import { db } from "./db/db";
 
 import apiRouter from "./handlers/index";
 
