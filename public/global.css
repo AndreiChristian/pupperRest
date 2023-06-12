@@ -1,0 +1,30 @@
+:root {
+    --background-light: #ffffff;
+    --primary-light: #5d3dbd;
+    --secondary-light: #ff6f61;
+    --text-light: #333333;
+    --secondary-text-light: #666666;
+    --standard-bars-light: #8c86aa;
+    --selected-bars-light: #ff4500;
+  
+    --background-dark: #181818;
+    --primary-dark: #9d4edd;
+    --secondary-dark: #ff8663;
+    --text-dark: #f5f5f5;
+    --secondary-text-dark: #cccccc;
+    --standard-bars-dark: #aa86b8;
+    --selected-bars-dark: #ff4500;
+  }
+
+body {
+  background-color: var(--background--light);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
