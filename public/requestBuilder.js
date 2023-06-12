@@ -1,0 +1,41 @@
+document.addEventListener("alpine:init", () =>
+  Alpine.store("request", {
+    url: "http://localhost:3000/api/filter/",
+    selection: {},
+    options: {
+      size: ["Small", "Large", "Medium", "Varies (Standard, Miniature, Toy)"],
+      use: [
+        "Terrier",
+        "Toy",
+        "Non-Sporting",
+        "Sporting",
+        "Hound",
+        "Working",
+        "Herding",
+      ],
+      purpose: [
+        "Companion/Hunting",
+        "Companion",
+        "Flushing",
+        "Draft work",
+        "Guarding",
+        "Flushing/Retrieving",
+        "Pointing",
+        "Sled dog",
+        "Carriage dog",
+        "Water work",
+        "Companion/Circus",
+        "Racing",
+        "Companion/Working",
+        "Hunting",
+        "Retrieving",
+        "Gun dog",
+        "Rescue",
+        "Herding",
+        "Water rescue",
+        "Scent hound",
+        "Hunting/Water retrieving",
+      ],
+    },
+  })
+);

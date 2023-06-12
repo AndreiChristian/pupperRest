@@ -1,0 +1,14 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  gap: 5vh;
+}
+
+.hero h1{
+
+    font-size: 4rem;
+}
+

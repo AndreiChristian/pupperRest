@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PupperRest</title>
-        <link rel="stylesheet" href="style.css">
+
         <link rel="stylesheet" href="global.css">
         <script defer
             src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <script src="theme.js"></script>
+        <script src="requestBuilder.js"></script>
     </head>
     <body x-data :class="$store.darkMode.on && 'dark'">
         <nav><ul>
@@ -39,16 +40,29 @@
                     </a></li>
             </ul></nav>
 
-        <div class="hero">
+        <h1>Request Builder</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime
+            quidem, laboriosam praesentium repellat explicabo nihil perspiciatis
+            inventore nulla sapiente quia. Natus dolores illum, modi similique
+            maxime delectus fuga quas? Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Voluptatibus nobis maiores assumenda, sit iste ut
+            magni consequuntur dicta fugit esse, maxime facilis eius suscipit,
+            quis veritatis odit consectetur voluptatem id.</p>
 
-            <h1>Pupper Rest</h1>
-            <h2>Empowering Developers with Canine Information in a Snap!</h2>
-
-            <div class="actions">
-                <button><a href="/documentation.html">See the docs</a></button>
-                <button class="button-raised"><a href>Request Builder</a></button>
-            </div>
-        </div>
+        <!-- <div x-data="Alpine.store('request')" class="container">
+            <template x-for="(optionKey, index) in options" :key="index">
+                <div class="option-section">
+                    <h2 x-text="optionKey"></h2>
+                    <ul>
+                        <template x-for="(item, i) in optionKey" :key="i">
+                            <li
+                                :class="{ 'selected-theme': selection[optionKey] === item }"
+                                x-text="item"></li>
+                        </template>
+                    </ul>
+                </div>
+            </template>
+        </div> -->
 
     </body>
 </html>
