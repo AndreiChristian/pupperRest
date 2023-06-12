@@ -4,7 +4,7 @@ import { db } from "../db/db";
 interface QueryParameters {
   breed?: string;
   size?: string;
-  function?: string;
+  use?: string;
   purpose?: string;
   coat_type?: string;
   temperament?: string;
@@ -20,7 +20,7 @@ export const getFilteredDogs = async (req: Request, res: Response) => {
     let queryParameters: QueryParameters = {
       breed: (req.query.breed as string) || "",
       size: (req.query.size as string) || "",
-      function: (req.query.use as string) || "",
+      use: (req.query.use as string) || "",
       purpose: (req.query.purpose as string) || "",
       coat_type: (req.query.coatType as string) || "",
       temperament: (req.query.temperament as string) || "",
