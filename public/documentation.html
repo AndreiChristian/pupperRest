@@ -12,11 +12,27 @@
     </head>
     <body x-data :class="$store.darkMode.on && 'dark'">
         <nav><ul>
+                <li><svg fill="#000000" viewBox="0 0 100 100"
+                        data-name="Layer 1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"><g
+                            id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                            id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                            stroke-linejoin="round"></g><g
+                            id="SVGRepo_iconCarrier"><title></title><path
+                                d="M51.01178,65.00494Q50.50631,64.99972,50,65q-.50684,0-1.01172.00494a1,1,0,1,0,.02057,1.99988Q49.5025,66.99978,50,67q.498,0,.99121.00482a1,1,0,0,0,.02057-1.99988Z"></path><path
+                                d="M59.72583,65.45813q-1.07574-.10354-2.175-.18445a1,1,0,1,0-.1466,1.99463q1.07656.07909,2.13006.1806a1,1,0,0,0,.19153-1.99078Z"></path><path
+                                d="M76.845,69.0274q-1.01184-.363-2.09039-.69744a1,1,0,1,0-.59247,1.91021q1.03821.322,2.00757.6698A1,1,0,1,0,76.845,69.0274Z"></path><path
+                                d="M68.37372,66.72217q-1.05671-.21249-2.15131-.40076a1,1,0,1,0-.339,1.97107q1.06723.18346,2.09607.39044a1,1,0,0,0,.39423-1.96075Z"></path><path
+                                d="M88.43765,77.83892,50.89,5.54a1.00346,1.00346,0,0,0-1.78,0L11.60988,77.7474A6.48166,6.48166,0,0,0,11,80a6.77383,6.77383,0,0,0,.9,3.31,13.82875,13.82875,0,0,0,5.08,4.8,45.66375,45.66375,0,0,0,13.9,5.01A93.15882,93.15882,0,0,0,50,95c10.59,0,20.19-1.58,27.22-4.16a27.51221,27.51221,0,0,0,8.45-4.64,10.81471,10.81471,0,0,0,2.43-2.89A6.77383,6.77383,0,0,0,89,80,6.00292,6.00292,0,0,0,88.43765,77.83892ZM86.35,82.34a11.82379,11.82379,0,0,1-4.37,4.06,43.67639,43.67639,0,0,1-13.27,4.77A91.8529,91.8529,0,0,1,50,93c-10.39,0-19.8-1.56-26.52-4.04A25.76211,25.76211,0,0,1,15.64,84.7a9.05251,9.05251,0,0,1-1.99-2.36A4.73886,4.73886,0,0,1,13,80a3.41991,3.41991,0,0,1,.07-.71s1.64352-3.19043,1.935-3.73782S17.5,73.9,18.12,73.53a.99556.99556,0,1,0-1.02-1.71c-.08.04-.15.09-.23.13995L50,8.17,83.13,71.96c-.08-.05-.15-.1-.23-.15a1.00243,1.00243,0,0,0-1.03,1.72c.62.37,2.84,1.4713,3.13146,2.033L86.93,79.28A4.39135,4.39135,0,0,1,87,80,4.73886,4.73886,0,0,1,86.35,82.34Z"></path><path
+                                d="M33.773,66.3222q-1.09423.18815-2.15125.40082a1,1,0,0,0,.39435,1.96076q1.02833-.20682,2.096-.39057a1,1,0,0,0-.33905-1.971Z"></path><path
+                                d="M25.24115,68.33124q-1.07785.33444-2.09027.69769a1,1,0,1,0,.67547,1.88245q.96855-.34754,2.00745-.67a1,1,0,1,0-.59265-1.91015Z"></path><path
+                                d="M42.44415,65.27405q-1.0989.08083-2.17486.18457a1,1,0,1,0,.19165,1.99078q1.053-.10144,2.12994-.18072a1,1,0,1,0-.14673-1.99463Z"></path></g></svg></li>
                 <li><a href="/">PupperRest</a></li>
                 <li class="spacer"></li>
                 <li><a href="/documentation.html">Docs</a></li>
                 <li><a href="/requestbuilder.html">Request Builder</a></li>
-                <li><a href="https://github.com/AndreiChristian" target="_blank"><svg
+                <li><a href="https://github.com/AndreiChristian/pupperRest"
+                        target="_blank"><svg
                             viewBox="0 -3.5 256 256"
                             xmlns="http://www.w3.org/2000/svg"
                             preserveAspectRatio="xMinYMin meet" fill="#000000"><g
@@ -39,111 +55,103 @@
                     </a></li>
             </ul></nav>
         <section>
+            <h1>Pupper Rest API Documentation</h1>
 
-            <h1>Hey there, welcome to the Pupper Rest API Docs!</h1>
-
-            <h2>So, what's this all about?</h2>
+            <h2>Overview</h2>
 
             <p>
-                Here's the deal - we love dogs. So, we decided to make the
-                Pupper Rest API, a fun project all about sharing data on a wide
-                variety of dog breeds. We made it for non-commercial use, so it's
-                really all about sharing the canine love.
+                The Pupper Rest API is a non-commercial project focused on
+                delivering comprehensive data on a variety of dog breeds. This
+                API is perfect for those who share our love for canines and wish
+                to access detailed information about different breeds.
             </p>
 
-            <h2>How do I dive in?</h2>
+            <h2>Getting Started</h2>
 
             <p>
-                Not sure how to start making requests? No worries at all! Our
-                nifty <a href="./requestbuilder.html">Request Builder</a> is
-                here to help. It's a super easy tool that'll guide you through
-                making requests.
+                If you are unfamiliar with making API requests, don't worry. Our
+                user-friendly <a href="./requestbuilder.html">Request Builder</a>
+                will guide you through the process, facilitating the creation
+                and execution of requests.
             </p>
 
             <h2>API Endpoints</h2>
 
             <p>
-                We've set up a few different endpoints for you to access all our
-                awesome dog data.
+                Our API comprises several endpoints that provide access to our
+                extensive dog data.
             </p>
 
-            <p>The base URL is <code>https://expressjs-postgres-production-f8f8.up.railway.app/</code></p>
+            <p>The base URL is <code>https://expressjs-postgres-production-f8f8.up.railway.app/api/</code></p>
 
-            <h3>1. /all</h3>
+            <h3><code>https://expressjs-postgres-production-f8f8.up.railway.app/api/all</code></h3>
 
             <p>
-                This is the go-to endpoint to fetch all the data about every
-                single dog breed we have. Just send a GET request to <code>/all</code>
-                and you'll get back a JSON object full of canine goodness.
+                The <code>/all</code> endpoint retrieves all available data for
+                every dog breed in our database. Send a GET request to this
+                endpoint to receive a JSON object containing breed IDs and
+                names.
             </p>
 
-            <h3>2. /filter</h3>
+            <h3><code>https://expressjs-postgres-production-f8f8.up.railway.app/api/filter/?...options</code></h3>
 
             <p>
-                Now, we understand that sometimes you're looking for something
-                specific. That's where the <code>/filter</code> endpoint comes
-                in. Send a GET request to <code>/filter</code> along with your
-                parameters (like size, use, or purpose) and we'll return a
-                tailored list of dog breeds that match your filters ( visit <a
-                    href="./requestbuilder.html">Request Builder</a> for more
-                info).
+                The <code>/filter</code> endpoint allows you to customize your
+                queries based on specific parameters. For instance, you might
+                wish to filter breeds based on size, use, or purpose. To do so,
+                simply send a GET request to this endpoint and include your
+                chosen parameters in the request URL. Please consult the <a
+                    href="./requestbuilder.html">Request Builder</a> for
+                detailed instructions on using this feature.
             </p>
 
-            <h3>3. /:id</h3>
+            <h3><code>https://expressjs-postgres-production-f8f8.up.railway.app/api/:id</code></h3>
 
             <p>
-                Want info about a specific dog breed? We got you covered. Just
-                replace <code>:id</code> with the ID of the dog breed you're
-                interested in and send a GET request to <code>/:id</code>. You'll
-                receive a JSON object containing all the data we have about that
-                breed.
+                If you need information about a particular breed, use the <code>/:id</code>
+                endpoint. Replace <code>:id</code> with the desired breed's ID
+                and send a GET request to receive a comprehensive JSON object
+                with the breed's details.
             </p>
 
-            <!-- We've got some more details to fill in here soon -->
-
-            <h2>What's in the box?</h2>
+            <h2>Data Format</h2>
 
             <p>
-                We're all about simplicity. That's why our API only sends back
-                data in JSON format. It's easy to use, flexible, and works well
-                with most programming languages. So, you can focus on the fun
-                part – playing with the data!
+                In line with our commitment to simplicity, all data returned by
+                our API is in JSON format. This choice of data format ensures
+                compatibility with most programming languages and ease of use.
             </p>
 
-            <h2>Share the love</h2>
+            <h2>Rate Limiting</h2>
 
             <p>
-                We've got loads of data but need to make sure all users get a
-                fair go. That's why we've set a limit of 2 requests per second
-                and 50 requests per hour for each user. Please stick to these
-                limits to keep things fair. If you go over, we'll have to
-                temporarily block your access and you'll see a
-                "Too many requests, please try again later." message. It's all
-                about playing fair, folks!
+                To ensure fair access to all users, we have instituted a rate
+                limit of 2 requests per second and 50 requests per hour per
+                user. Overstepping these limits may result in temporary access
+                suspension. In such cases, users will see a
+                "Too many requests, please try again later." message.
             </p>
 
-            <h2>Efficiency for the win!</h2>
+            <h2>Caching</h2>
 
             <p>
-                To help your apps run faster (and keep our server from getting
-                overwhelmed), it'd be awesome if you could implement some
-                caching. It reduces the load on our server and helps you get the
-                data faster. It's a win-win!
+                To enhance the performance of your applications and minimize
+                server load, we recommend implementing caching. This strategy
+                speeds up data retrieval and reduces server strain, resulting in
+                a more efficient overall system.
             </p>
 
-            <h2>Like what we do?</h2>
+            <h2>Feedback and Contributions</h2>
 
             <p>
-                If you're finding our API useful and want to show some
-                appreciation, a simple mention goes a long way for us. And if
-                you want to go the extra mile and contribute, we'd be over the
-                moon! Feel free to make a pull request – we're always open to
-                improvements.
+                If you find our API beneficial and wish to show appreciation, a
+                mention would be highly appreciated. For those who wish to
+                contribute, we welcome pull requests. Any improvements to the
+                API are always welcome.
             </p>
 
             <p>by <a href="https://github.com/AndreiChristian" target="_blank">Andrei
-                    Christian
-                    Netoiu</a></p>
+                    Christian Netoiu</a></p>
 
         </section>
     </body>

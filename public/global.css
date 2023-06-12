@@ -22,7 +22,7 @@ body {
   --background: var(--background-light);
   --color: var(--text-light);
   --primary: var(--primary-light);
-  --secondary: var(--background-light);
+  --secondary: var(--secondary-light);
   --color--light: var(--text-light);
   font-family: "Roboto", sans-serif;
 }
@@ -92,10 +92,18 @@ svg {
 }
 
 .button-raised {
-  background-color: var(--primary) !important;
-  /* outline: 5px solid red; */
+  color: var(--primary);
+  outline: 1px solid var(--primary);
+  /* font-weight: bolder; */
 }
 
-p{
-    font-size: large;
+.button-raised:hover {
+  background-color: var(--primary);
+  color: var(--background);
+  transition: all 0.5s;
+}
+
+p {
+  font-size: large;
+  letter-spacing: 2.5px;
 }

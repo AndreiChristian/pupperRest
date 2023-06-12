@@ -1,0 +1,71 @@
+.container button {
+  /* transition: all 0.2s; */
+  margin: 1vh 0;
+  font-size: medium;
+  /* outline: 1px solid transparent; */
+}
+
+.key {
+  padding: 2vh;
+  color: var(--secondary);
+  /* background-color: var(--color); */
+  margin: 10vh 1vw;
+  border-radius: 10px;
+  font-size: x-large;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30vh;
+}
+
+.button-selected {
+  color: var(--primary);
+  outline: 1px solid var(--primary);
+}
+
+h1 svg {
+  fill: none;
+  transition: all 2s;
+}
+
+h1 svg:hover {
+  fill: unset;
+}
+
+.header {
+  /* position: relative; */
+  margin: 3vh 2vh;
+  /* margin-top: 2vh;
+  margin-bottom: 2vh; */
+}
+
+/* .header svg {
+  transform: translateY(10px);
+} */
+
+.header svg {
+  fill: none;
+}
+
+.url {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid var(--color);
+  background-color: var(--background);
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3vh;
+  gap: 1vh;
+  font-size: medium;
+  fill: none;
+}
+
+.url svg:hover {
+  fill: var(--color);
+}

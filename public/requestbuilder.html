@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PupperRest</title>
 
+        <link rel="stylesheet" href="requestBuilder.css">
         <link rel="stylesheet" href="global.css">
         <script defer
             src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -13,11 +14,27 @@
     </head>
     <body x-data :class="$store.darkMode.on && 'dark'">
         <nav><ul>
+                <li><svg fill="#000000" viewBox="0 0 100 100"
+                        data-name="Layer 1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"><g
+                            id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                            id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                            stroke-linejoin="round"></g><g
+                            id="SVGRepo_iconCarrier"><title></title><path
+                                d="M51.01178,65.00494Q50.50631,64.99972,50,65q-.50684,0-1.01172.00494a1,1,0,1,0,.02057,1.99988Q49.5025,66.99978,50,67q.498,0,.99121.00482a1,1,0,0,0,.02057-1.99988Z"></path><path
+                                d="M59.72583,65.45813q-1.07574-.10354-2.175-.18445a1,1,0,1,0-.1466,1.99463q1.07656.07909,2.13006.1806a1,1,0,0,0,.19153-1.99078Z"></path><path
+                                d="M76.845,69.0274q-1.01184-.363-2.09039-.69744a1,1,0,1,0-.59247,1.91021q1.03821.322,2.00757.6698A1,1,0,1,0,76.845,69.0274Z"></path><path
+                                d="M68.37372,66.72217q-1.05671-.21249-2.15131-.40076a1,1,0,1,0-.339,1.97107q1.06723.18346,2.09607.39044a1,1,0,0,0,.39423-1.96075Z"></path><path
+                                d="M88.43765,77.83892,50.89,5.54a1.00346,1.00346,0,0,0-1.78,0L11.60988,77.7474A6.48166,6.48166,0,0,0,11,80a6.77383,6.77383,0,0,0,.9,3.31,13.82875,13.82875,0,0,0,5.08,4.8,45.66375,45.66375,0,0,0,13.9,5.01A93.15882,93.15882,0,0,0,50,95c10.59,0,20.19-1.58,27.22-4.16a27.51221,27.51221,0,0,0,8.45-4.64,10.81471,10.81471,0,0,0,2.43-2.89A6.77383,6.77383,0,0,0,89,80,6.00292,6.00292,0,0,0,88.43765,77.83892ZM86.35,82.34a11.82379,11.82379,0,0,1-4.37,4.06,43.67639,43.67639,0,0,1-13.27,4.77A91.8529,91.8529,0,0,1,50,93c-10.39,0-19.8-1.56-26.52-4.04A25.76211,25.76211,0,0,1,15.64,84.7a9.05251,9.05251,0,0,1-1.99-2.36A4.73886,4.73886,0,0,1,13,80a3.41991,3.41991,0,0,1,.07-.71s1.64352-3.19043,1.935-3.73782S17.5,73.9,18.12,73.53a.99556.99556,0,1,0-1.02-1.71c-.08.04-.15.09-.23.13995L50,8.17,83.13,71.96c-.08-.05-.15-.1-.23-.15a1.00243,1.00243,0,0,0-1.03,1.72c.62.37,2.84,1.4713,3.13146,2.033L86.93,79.28A4.39135,4.39135,0,0,1,87,80,4.73886,4.73886,0,0,1,86.35,82.34Z"></path><path
+                                d="M33.773,66.3222q-1.09423.18815-2.15125.40082a1,1,0,0,0,.39435,1.96076q1.02833-.20682,2.096-.39057a1,1,0,0,0-.33905-1.971Z"></path><path
+                                d="M25.24115,68.33124q-1.07785.33444-2.09027.69769a1,1,0,1,0,.67547,1.88245q.96855-.34754,2.00745-.67a1,1,0,1,0-.59265-1.91015Z"></path><path
+                                d="M42.44415,65.27405q-1.0989.08083-2.17486.18457a1,1,0,1,0,.19165,1.99078q1.053-.10144,2.12994-.18072a1,1,0,1,0-.14673-1.99463Z"></path></g></svg></li>
                 <li><a href="/">PupperRest</a></li>
                 <li class="spacer"></li>
                 <li><a href="/documentation.html">Docs</a></li>
                 <li><a href="/requestbuilder.html">Request Builder</a></li>
-                <li><a href="https://github.com/AndreiChristian" target="_blank"><svg
+                <li><a href="https://github.com/AndreiChristian/pupperRest"
+                        target="_blank"><svg
                             viewBox="0 -3.5 256 256"
                             xmlns="http://www.w3.org/2000/svg"
                             preserveAspectRatio="xMinYMin meet" fill="#000000"><g
@@ -40,29 +57,118 @@
                     </a></li>
             </ul></nav>
 
-        <h1>Request Builder</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime
-            quidem, laboriosam praesentium repellat explicabo nihil perspiciatis
-            inventore nulla sapiente quia. Natus dolores illum, modi similique
-            maxime delectus fuga quas? Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Voluptatibus nobis maiores assumenda, sit iste ut
-            magni consequuntur dicta fugit esse, maxime facilis eius suscipit,
-            quis veritatis odit consectetur voluptatem id.</p>
+        <section>
+            <h1>Request Builder</h1>
+            <p>For our API, chaining allows users to apply multiple filters to
+                their requests to narrow down the returned results to meet their
+                specific criteria. When forming the request URL, the query
+                string is structured with distinct key-value pairs, each
+                representing a separate filter. These pairs are separated by an
+                ampersand (&), forming a chain of conditions.
 
-        <!-- <div x-data="Alpine.store('request')" class="container">
-            <template x-for="(optionKey, index) in options" :key="index">
-                <div class="option-section">
-                    <h2 x-text="optionKey"></h2>
-                    <ul>
-                        <template x-for="(item, i) in optionKey" :key="i">
-                            <li
-                                :class="{ 'selected-theme': selection[optionKey] === item }"
-                                x-text="item"></li>
+                Each key in the pair represents a particular attribute of the
+                data (like 'size', 'origin', or 'trainability'), and the value
+                is what you're specifically looking for in that attribute. For
+                example, if you wanted to find dogs that are of 'small' size and
+                are 'high' in trainability, you'd construct a query string like:
+                `?size=small&trainability=high`.
+
+                When the API receives this request, it first filters the data
+                based on the 'size' attribute, then takes that subset of data
+                and filters it again based on 'trainability'. The result will be
+                a collection of entries that meet both conditions - they are
+                'small' and have 'high' trainability.
+
+                It's crucial to understand that the order of the filters does
+                not matter; the result will always be the same. Also, while the
+                chaining mechanism allows you to specify multiple filters, you
+                must always ensure that the filters are relevant to the data you
+                are requesting. If a filter is irrelevant, it will not break the
+                request but may return an empty result if no entries meet the
+                specified criteria.</p>
+
+            <div x-data="Alpine.store('request')" class="container">
+
+                <h3 class="url">
+
+                    <svg
+                        x-on:click="navigator.clipboard.writeText(urlBuilder(url,selection))"
+                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                    </svg>
+                    <code x-text="urlBuilder(url, selection)">
+                    </code>
+
+                </h3>
+
+                <template x-for="(optionKey, index) in Object.keys(options)"
+                    :key="index">
+                    <span class="option-section">
+
+                        <div class="header">
+                            <span x-text="optionKey" class="key"></span>
+
+                            <svg x-show="selection[optionKey]"
+                                x-on:click='()=>{selection[optionKey]=""}'
+                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                            </svg>
+
+                        </div>
+
+                        <!-- <div class="list"></div> -->
+
+                        <template
+                            x-for="(item, i) in options[optionKey]"
+                            :key="i">
+                            <button x-on:click='()=>{selection[optionKey]=item}'
+                                :class="{ 'button-selected' : selection[optionKey] === item }"
+                                x-text="item"></button>
                         </template>
-                    </ul>
-                </div>
-            </template>
-        </div> -->
 
+                    </span>
+                </template>
+            </div>
+            <h1>Examples</h1>
+            <h2>#1</h2>
+            <h2><code>https://expressjs-postgres-production-f8f8.up.railway.app/api/filter/?origin=United
+                    Kingdom</code></h2>
+            <p>In this example, the request is searching for dog breeds that
+                originated in the United Kingdom. To do this, it adds the
+                "origin" key to the query string, with the value being
+                "United Kingdom". Therefore, the generated URL only returns
+                breeds that fit this specific criteria.</p>
+            <h2>#2</h2>
+            <h2><code>https://expressjs-postgres-production-f8f8.up.railway.app/api/filter/?size=Medium&origin=United
+                    Kingdom&trainability=Low</code></h2>
+            <p>In this example, the request is further refined to search for
+                medium-sized dog breeds that originated in the United Kingdom
+                and have a low trainability. The attributes "size", "origin",
+                and "trainability" are included in the query string. Each of
+                these attributes is assigned a specific value (Medium, United
+                Kingdom, and Low respectively), effectively narrowing down the
+                search results to only include breeds that meet all these
+                criteria.</p>
+
+            <h2>#3</h2>
+            <h2><code>https://expressjs-postgres-production-f8f8.up.railway.app/api/filter/?purpose=Flushing/Retrieving&coat_type=Short-haired&origin=Sweden&temperament=Smart</code></h2>
+            <p>In this example, the request is searching for dog breeds with
+                specific characteristics: a purpose of flushing/retrieving, a
+                short-haired coat type, origin from Sweden, and a smart
+                temperament. To accomplish this, the "purpose", "coat_type",
+                "origin", and "temperament" keys are included in the query
+                string. These keys are each assigned a specific value
+                (Flushing/Retrieving, Short-haired, Sweden, and Smart
+                respectively). Therefore, the generated URL only returns breeds
+                that fit all these specific criteria.</p>
+
+        </section>
     </body>
 </html>
