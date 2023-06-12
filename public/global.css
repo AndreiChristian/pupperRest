@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Teko:wght@300&display=swap");
 :root {
   --background-light: #ffffff;
   --primary-light: teal;
@@ -15,12 +16,18 @@
 body {
   background-color: var(--background);
   color: var(--color);
+  stroke: var(--color);
+  fill: var(--color);
+
+  min-height: 100vh;
+  min-height: 100dvh;
 
   --background: var(--background-light);
   --color: var(--text-light);
   --primary: var(--primary-light);
   --secondary: var(--background-light);
   --color--light: var(--text-light);
+  font-family: "Roboto", sans-serif;
 }
 
 .dark {
@@ -31,17 +38,48 @@ body {
   --color--light: var(--secondary-text-dark);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+  box-sizing: border-box;
 }
 
 ul {
   list-style: none;
 }
 
+nav {
+  width: 100%;
+  color: var(--color);
+}
+
 nav ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 2vw;
+  gap: 2vw;
+  width: 100%;
+  font-size: larger;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.spacer {
+  flex: 1;
+  width: 100%;
+}
+
+svg {
+  width: clamp(15px, 5vh, 25px);
+  height: clamp(15px, 5vh, 25px);
+  stroke: inherit;
+  color: inherit;
+  fill: inherit;
 }
