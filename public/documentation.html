@@ -60,6 +60,45 @@
                 making requests.
             </p>
 
+            <h2>API Endpoints</h2>
+
+            <p>
+                We've set up a few different endpoints for you to access all our
+                awesome dog data.
+            </p>
+
+            <p>The base URL is <code>https://expressjs-postgres-production-f8f8.up.railway.app/</code></p>
+
+            <h3>1. /all</h3>
+
+            <p>
+                This is the go-to endpoint to fetch all the data about every
+                single dog breed we have. Just send a GET request to <code>/all</code>
+                and you'll get back a JSON object full of canine goodness.
+            </p>
+
+            <h3>2. /filter</h3>
+
+            <p>
+                Now, we understand that sometimes you're looking for something
+                specific. That's where the <code>/filter</code> endpoint comes
+                in. Send a GET request to <code>/filter</code> along with your
+                parameters (like size, use, or purpose) and we'll return a
+                tailored list of dog breeds that match your filters ( visit <a
+                    href="./requestbuilder.html">Request Builder</a> for more
+                info).
+            </p>
+
+            <h3>3. /:id</h3>
+
+            <p>
+                Want info about a specific dog breed? We got you covered. Just
+                replace <code>:id</code> with the ID of the dog breed you're
+                interested in and send a GET request to <code>/:id</code>. You'll
+                receive a JSON object containing all the data we have about that
+                breed.
+            </p>
+
             <!-- We've got some more details to fill in here soon -->
 
             <h2>What's in the box?</h2>
